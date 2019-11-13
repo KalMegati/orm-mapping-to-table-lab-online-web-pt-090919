@@ -39,7 +39,8 @@ class Student
   end
   
   def self.create(hashtributes)
-    student = self.new(hashtributes)
+    student = self.new(hashtributes[:name], hashtributes[:grade])
+    student.save
   end
   
 end
