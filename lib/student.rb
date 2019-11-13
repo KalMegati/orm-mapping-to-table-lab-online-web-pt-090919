@@ -37,4 +37,8 @@ class Student
     @id = DB[:conn].execute("SELECT id FROM students ORDER BY id DESC")[0][0]
   end
   
+  def self.create(hashtributes)
+    
+  end
+  
 end
